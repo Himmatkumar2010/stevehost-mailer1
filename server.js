@@ -12,8 +12,8 @@ const transporter = nodemailer.createTransport({
     port: 2525,
     secure: false,
     auth: {
-        user: "stevehost@gmail.com",
-        pass: "xsmtpsib-8dbc814ab447a20e0a41453347bf2d863cac58292be9fd657dadbe52186ce355-cgjLEMGOLENyPqs1"
+        user: "ac09d2001@smtp-brevo.com",
+        pass: "xsmtpsib-8dbc814ab447a20e0a41453347bf2d863cac58292be9fd657dadbe52186ce355-pYQmJkA36MN9Y9Zf"
     }
 });
 
