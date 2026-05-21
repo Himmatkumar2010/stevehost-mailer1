@@ -10,7 +10,7 @@ app.use(cors());
 const transporter = nodemailer.createTransport({
     host: "smtp-relay.brevo.com",
     port: 587,
-    secure: false,
+    secure: true,
     auth: {
         user: "ac09d2001@smtp-brevo.com",
         pass: "xsmtpsib-8dbc814ab447a20e0a41453347bf2d863cac58292be9fd657dadbe52186ce355-pYQmJkA36MN9Y9Zf"
