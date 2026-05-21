@@ -9,16 +9,15 @@ app.use(cors());
 
 const transporter = nodemailer.createTransport({
     host: "smtp-relay.brevo.com",
-    port: 2525,
+    port: 587,
     secure: false,
     auth: {
         user: "ac09d2001@smtp-brevo.com",
         pass: "xsmtpsib-8dbc814ab447a20e0a41453347bf2d863cac58292be9fd657dadbe52186ce355-pYQmJkA36MN9Y9Zf"
+    },
+    tls: {
+        rejectUnauthorized: false
     }
-});
-
-app.get("/", (req, res) => {
-    res.send("SteveHost Mailer Running");
 });
 
 app.post("/send-otp", async (req, res) => {
